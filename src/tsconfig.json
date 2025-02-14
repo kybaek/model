@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // we might want to change to false
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "target": "ES6",
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "jsx": "react",
+    "lib": ["es2020", "dom"],
+    "rootDir": ".",
+    "outDir": "../lib/"
+  },
+  "exclude": ["scripts", "apps"]
+}

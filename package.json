@@ -1,0 +1,17 @@
+{
+  "name": "model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cli": "tsx src/apps/cli/index.ts",
+    "build": "tsc --project src/tsconfig.json && tsc -m esnext --outDir lib-es"
+  },
+  "dependencies": {
+    "@noble/secp256k1": "^2.2.3",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  }
+}

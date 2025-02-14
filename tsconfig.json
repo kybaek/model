@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "esnext", // 모듈 형식 ES6
+    "target": "esnext", // 타겟 ES6
+    "lib": ["esnext", "DOM"],
+    "moduleResolution": "Bundler", // 모듈 해석 Node
+    "esModuleInterop": true, // commonJS 모듈을 ES6로 import
+    // dayjs에서 필요해서 추가
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true, // 디버깅 맵
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "lib",
+    "allowJs": true,
+    "baseUrl": "./", // 상대 경로 기준
+  },
+  "include": ["src/**/*"], // 컴파일할 파일 경로
+  "exclude": [
+    "node_modules", // would be the default
+    "src/apps/**/*",
+    "dist",
+    "data"
+  ]
+}
